@@ -75,5 +75,15 @@ public class StreamsIntermediatoryfunctions {
         int [] nums = streams.toArray();
         // here we cannnot do List<int> because always work in Integer wrapper classes
 
+
+        // for each terminal function
+        List<Integer> num = Arrays.asList(1,3,6,3,7,2,4);
+                    num.stream()
+                    .filter((Integer n) -> n>3)
+                .distinct()
+                .forEach((Integer val) -> System.out.println(val));
+
+
+
     }
 }
